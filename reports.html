@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - University of Lusaka Exam System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="university-logo">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h1>University of Lusaka</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
+                    <li><a href="schedule.html"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+                    <li><a href="attendance.html"><i class="fas fa-user-check"></i> Attendance</a></li>
+                    <li><a href="incidents.html"><i class="fas fa-exclamation-triangle"></i> Incidents</a></li>
+                    <li><a href="reports.html" class="active"><i class="fas fa-file-alt"></i> Reports</a></li>
+                    <li><a href="index.html" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="reports-main">
+        <div class="page-header">
+            <h2>Exam Reports</h2>
+            <div class="report-controls">
+                <select id="reportType">
+                    <option value="attendance">Attendance Report</option>
+                    <option value="incidents">Incident Report</option>
+                    <option value="summary">Summary Report</option>
+                </select>
+                <button id="generateReport" class="btn btn-primary">Generate Report</button>
+                <button id="exportReport" class="btn btn-secondary">Export Report</button>
+            </div>
+        </div>
+        
+        <div class="report-container" id="reportContainer">
+            <!-- Dynamically populated -->
+        </div>
+    </main>
+    
+    <footer class="main-footer">
+        <p>© 2025 University of Lusaka. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

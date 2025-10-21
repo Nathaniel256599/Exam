@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance - University of Lusaka Exam System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="university-logo">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h1>University of Lusaka</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a></li>
+                    <li><a href="schedule.html"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+                    <li><a href="attendance.html" class="active"><i class="fas fa-user-check"></i> Attendance</a></li>
+                    <li><a href="incidents.html"><i class="fas fa-exclamation-triangle"></i> Incidents</a></li>
+                    <li><a href="reports.html"><i class="fas fa-file-alt"></i> Reports</a></li>
+                    <li><a href="index.html" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="attendance-main">
+        <div class="page-header">
+            <h2>Mark Attendance</h2>
+            <div class="exam-info">
+                <p><strong>Current Exam:</strong> <span id="currentExamInfo">CS101 - Introduction to Computer Science</span></p>
+            </div>
+        </div>
+        
+        <div class="attendance-controls">
+            <div class="timer-container">
+                <div class="timer-display" id="examTimer">00:00:00</div>
+                <div class="timer-controls">
+                    <button id="startTimer" class="btn btn-success"><i class="fas fa-play"></i> Start</button>
+                    <button id="pauseTimer" class="btn btn-warning" disabled><i class="fas fa-pause"></i> Pause</button>
+                    <button id="resetTimer" class="btn btn-danger"><i class="fas fa-redo"></i> Reset</button>
+                </div>
+            </div>
+            
+            <div class="id-scan-container">
+                <h3>Student ID Scanner</h3>
+                <div class="scan-input">
+                    <input type="text" id="studentIdInput" placeholder="Enter Student ID or scan barcode">
+                    <button id="scanBtn" class="btn btn-primary"><i class="fas fa-barcode"></i> Scan</button>
+                </div>
+                <div class="scan-status" id="scanStatus"></div>
+            </div>
+        </div>
+        
+        <div class="attendance-table-container">
+            <table class="attendance-table">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" id="selectAll"></th>
+                        <th>Student ID</th>
+                        <th>Student Name</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="attendanceTableBody">
+                    <!-- Dynamically populated -->
+                </tbody>
+            </table>
+            <div class="attendance-actions">
+                <button id="saveAttendance" class="btn btn-primary">Save Attendance</button>
+                <button id="exportAttendance" class="btn btn-secondary">Export to CSV</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="main-footer">
+        <p>© 2025 University of Lusaka. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

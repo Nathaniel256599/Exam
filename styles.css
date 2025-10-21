@@ -1,21 +1,21 @@
-/* University of Lusaka Exam Invigilator System - Styles */
-/* Color Scheme: Navy Blue (#0A2E5C), White (#FFFFFF), Gold (#D4AF37) */
+/* University of Lusaka Exam Invigilator System - Official Branding */
+/* Colors based on UNILUS logo: Dark Green, Black, Gold, White */
 
-/* CSS Variables */
+/* CSS Variables (Official UNILUS Colors) */
 :root {
-    --navy: #0A2E5C;
-    --white: #FFFFFF;
-    --gold: #D4AF37;
-    --light-gold: #E6C56A;
-    --dark-navy: #071F3F;
+    --unilus-dark-green: #004D26;
+    --unilus-black: #000000;
+    --unilus-gold: #FFD700;
+    --unilus-white: #FFFFFF;
     --light-gray: #f5f7fa;
     --medium-gray: #e0e5ec;
     --dark-gray: #6c757d;
     --success: #28a745;
     --warning: #ffc107;
     --danger: #dc3545;
-    --primary: var(--navy);
-    --secondary: var(--gold);
+    --primary: var(--unilus-dark-green);
+    --secondary: var(--unilus-gold);
+    --text-color: var(--unilus-black);
 }
 
 /* Reset and Base Styles */
@@ -26,15 +26,15 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Georgia', 'Times New Roman', serif;
     line-height: 1.6;
-    color: #333;
+    color: var(--text-color);
     background-color: var(--light-gray);
 }
 
 a {
     text-decoration: none;
-    color: var(--navy);
+    color: var(--unilus-dark-green);
 }
 
 ul {
@@ -47,7 +47,7 @@ img {
 
 /* Login Page Styles */
 .login-page {
-    background: linear-gradient(135deg, var(--navy) 0%, var(--dark-navy) 100%);
+    background: linear-gradient(135deg, var(--unilus-dark-green) 0%, var(--unilus-black) 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -56,7 +56,7 @@ img {
 }
 
 .login-container {
-    background: var(--white);
+    background: var(--unilus-white);
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     width: 100%;
@@ -70,27 +70,32 @@ img {
 }
 
 .university-logo {
-    width: 80px;
-    height: 80px;
-    background: var(--gold);
+    width: 100px;
+    height: 100px;
+    background: var(--unilus-gold);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 15px;
-    color: var(--navy);
-    font-size: 36px;
+    color: var(--unilus-dark-green);
+    font-size: 40px;
+    font-weight: bold;
+    border: 4px solid var(--unilus-dark-green);
 }
 
 .login-container h1 {
-    color: var(--navy);
+    color: var(--unilus-dark-green);
     margin-bottom: 5px;
     font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .login-container p {
     color: var(--dark-gray);
     margin-bottom: 25px;
+    font-style: italic;
 }
 
 .login-form .form-group {
@@ -102,7 +107,7 @@ img {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
-    color: var(--navy);
+    color: var(--unilus-dark-green);
 }
 
 .login-form input {
@@ -115,9 +120,9 @@ img {
 }
 
 .login-form input:focus {
-    border-color: var(--gold);
+    border-color: var(--unilus-gold);
     outline: none;
-    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.2);
 }
 
 .btn {
@@ -130,29 +135,30 @@ img {
     cursor: pointer;
     transition: all 0.3s;
     text-align: center;
+    font-family: inherit;
 }
 
 .btn-primary {
-    background: var(--navy);
-    color: var(--white);
+    background: var(--unilus-dark-green);
+    color: var(--unilus-white);
 }
 
 .btn-primary:hover {
-    background: var(--dark-navy);
+    background: #00331A;
 }
 
 .btn-secondary {
-    background: var(--gold);
-    color: var(--navy);
+    background: var(--unilus-gold);
+    color: var(--unilus-dark-green);
 }
 
 .btn-secondary:hover {
-    background: var(--light-gold);
+    background: #E6C56A;
 }
 
 .btn-success {
     background: var(--success);
-    color: var(--white);
+    color: var(--unilus-white);
 }
 
 .btn-warning {
@@ -162,19 +168,20 @@ img {
 
 .btn-danger {
     background: var(--danger);
-    color: var(--white);
+    color: var(--unilus-white);
 }
 
 .login-footer {
     margin-top: 30px;
     color: var(--dark-gray);
     font-size: 14px;
+    font-style: italic;
 }
 
 /* Main Layout Styles */
 .main-header {
-    background: var(--navy);
-    color: var(--white);
+    background: var(--unilus-dark-green);
+    color: var(--unilus-white);
     padding: 15px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -201,21 +208,23 @@ img {
     align-items: center;
     gap: 8px;
     padding: 10px 15px;
-    color: var(--white);
+    color: var(--unilus-white);
     border-radius: 6px;
     transition: background 0.3s;
+    font-family: inherit;
 }
 
-.main-nav a:hover, .main-nav a.active {
+.main-nav a:hover,
+.main-nav a.active {
     background: rgba(255, 255, 255, 0.1);
 }
 
 .logout-btn {
-    background: rgba(212, 175, 55, 0.2) !important;
+    background: rgba(255, 215, 0, 0.2) !important;
 }
 
 .logout-btn:hover {
-    background: rgba(212, 175, 55, 0.3) !important;
+    background: rgba(255, 215, 0, 0.3) !important;
 }
 
 main {
@@ -234,28 +243,31 @@ main {
 }
 
 .page-header h2 {
-    color: var(--navy);
+    color: var(--unilus-dark-green);
     font-size: 28px;
+    font-weight: bold;
 }
 
 .exam-info {
-    background: var(--white);
+    background: var(--unilus-white);
     padding: 10px 15px;
     border-radius: 6px;
-    border-left: 4px solid var(--gold);
+    border-left: 4px solid var(--unilus-gold);
+    font-family: inherit;
 }
 
 .main-footer {
-    background: var(--navy);
-    color: var(--white);
+    background: var(--unilus-dark-green);
+    color: var(--unilus-white);
     text-align: center;
     padding: 20px;
     margin-top: 50px;
+    font-family: inherit;
 }
 
 /* Dashboard Styles */
 .welcome-section {
-    background: var(--white);
+    background: var(--unilus-white);
     padding: 25px;
     border-radius: 12px;
     margin-bottom: 25px;
@@ -263,12 +275,14 @@ main {
 }
 
 .welcome-section h2 {
-    color: var(--navy);
+    color: var(--unilus-dark-green);
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .welcome-section span {
-    color: var(--gold);
+    color: var(--unilus-gold);
+    font-weight: bold;
 }
 
 .dashboard-cards {
@@ -279,7 +293,7 @@ main {
 }
 
 .card {
-    background: var(--white);
+    background: var(--unilus-white);
     border-radius: 12px;
     padding: 20px;
     display: flex;
@@ -294,33 +308,44 @@ main {
     align-items: center;
     justify-content: center;
     margin-right: 15px;
-    color: var(--white);
+    color: var(--unilus-white);
     font-size: 24px;
 }
 
-.bg-primary { background: var(--navy); }
-.bg-success { background: var(--success); }
-.bg-warning { background: var(--warning); color: #212529; }
+.bg-primary {
+    background: var(--unilus-dark-green);
+}
+
+.bg-success {
+    background: var(--success);
+}
+
+.bg-warning {
+    background: var(--unilus-gold);
+    color: #212529;
+}
 
 .card-content h3 {
     font-size: 18px;
     margin-bottom: 8px;
-    color: var(--navy);
+    color: var(--unilus-dark-green);
+    font-weight: bold;
 }
 
 .card-content p {
     font-size: 24px;
     font-weight: 700;
-    color: var(--gold);
+    color: var(--unilus-gold);
 }
 
 .upcoming-exams h3 {
     margin-bottom: 15px;
-    color: var(--navy);
+    color: var(--unilus-dark-green);
+    font-weight: bold;
 }
 
 .exam-list {
-    background: var(--white);
+    background: var(--unilus-white);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -338,8 +363,9 @@ main {
 }
 
 .exam-details h4 {
-    color: var(--navy);
+    color: var(--unilus-dark-green);
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .exam-details p {
@@ -374,11 +400,11 @@ main {
     padding: 8px 12px;
     border: 1px solid var(--medium-gray);
     border-radius: 6px;
-    background: var(--white);
+    background: var(--unilus-white);
 }
 
 .schedule-table-container {
-    background: var(--white);
+    background: var(--unilus-white);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -390,11 +416,12 @@ main {
 }
 
 .schedule-table th {
-    background: var(--navy);
-    color: var(--white);
+    background: var(--unilus-dark-green);
+    color: var(--unilus-white);
     text-align: left;
     padding: 15px 20px;
     font-weight: 600;
+    font-family: inherit;
 }
 
 .schedule-table td {
@@ -407,7 +434,7 @@ main {
 }
 
 .schedule-table tr:hover {
-    background: rgba(212, 175, 55, 0.05);
+    background: rgba(255, 215, 0, 0.05);
 }
 
 /* Attendance Page Styles */
@@ -419,7 +446,7 @@ main {
 }
 
 .timer-container {
-    background: var(--white);
+    background: var(--unilus-white);
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -429,7 +456,7 @@ main {
 .timer-display {
     font-size: 48px;
     font-weight: 700;
-    color: var(--navy);
+    color: var(--unilus-dark-green);
     margin-bottom: 15px;
     font-family: 'Courier New', monospace;
 }
@@ -441,7 +468,7 @@ main {
 }
 
 .id-scan-container {
-    background: var(--white);
+    background: var(--unilus-white);
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -449,7 +476,8 @@ main {
 
 .id-scan-container h3 {
     margin-bottom: 15px;
-    color: var(--navy);
+    color: var(--unilus-dark-green);
+    font-weight: bold;
 }
 
 .scan-input {
@@ -485,7 +513,7 @@ main {
 }
 
 .attendance-table-container {
-    background: var(--white);
+    background: var(--unilus-white);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -504,13 +532,14 @@ main {
 }
 
 .attendance-table th {
-    background: var(--navy);
-    color: var(--white);
+    background: var(--unilus-dark-green);
+    color: var(--unilus-white);
     font-weight: 600;
+    font-family: inherit;
 }
 
 .attendance-table tr:nth-child(even) {
-    background: rgba(212, 175, 55, 0.05);
+    background: rgba(255, 215, 0, 0.05);
 }
 
 .attendance-actions {
@@ -522,7 +551,7 @@ main {
 
 /* Incident Reporting Styles */
 .incident-form-container {
-    background: var(--white);
+    background: var(--unilus-white);
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -544,7 +573,8 @@ main {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
-    color: var(--navy);
+    color: var(--unilus-dark-green);
+    font-family: inherit;
 }
 
 .form-group input,
@@ -555,6 +585,7 @@ main {
     border: 1px solid var(--medium-gray);
     border-radius: 6px;
     font-size: 16px;
+    font-family: inherit;
 }
 
 .form-actions {
@@ -565,16 +596,17 @@ main {
 
 .reported-incidents h3 {
     margin-bottom: 15px;
-    color: var(--navy);
+    color: var(--unilus-dark-green);
+    font-weight: bold;
 }
 
 .incident-item {
-    background: var(--white);
+    background: var(--unilus-white);
     padding: 20px;
     border-radius: 12px;
     margin-bottom: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    border-left: 4px solid var(--gold);
+    border-left: 4px solid var(--unilus-gold);
 }
 
 .incident-header {
@@ -585,7 +617,7 @@ main {
 
 .incident-type {
     font-weight: 700;
-    color: var(--navy);
+    color: var(--unilus-dark-green);
 }
 
 .incident-severity {
@@ -595,10 +627,25 @@ main {
     font-weight: 600;
 }
 
-.severity-low { background: rgba(40, 167, 69, 0.1); color: var(--success); }
-.severity-medium { background: rgba(255, 193, 7, 0.1); color: var(--warning); }
-.severity-high { background: rgba(220, 53, 69, 0.1); color: var(--danger); }
-.severity-critical { background: rgba(108, 117, 125, 0.1); color: var(--dark-gray); }
+.severity-low {
+    background: rgba(40, 167, 69, 0.1);
+    color: var(--success);
+}
+
+.severity-medium {
+    background: rgba(255, 193, 7, 0.1);
+    color: var(--unilus-gold);
+}
+
+.severity-high {
+    background: rgba(220, 53, 69, 0.1);
+    color: var(--danger);
+}
+
+.severity-critical {
+    background: rgba(108, 117, 125, 0.1);
+    color: var(--dark-gray);
+}
 
 .incident-details p {
     margin-bottom: 8px;
@@ -615,11 +662,11 @@ main {
     padding: 8px 12px;
     border: 1px solid var(--medium-gray);
     border-radius: 6px;
-    background: var(--white);
+    background: var(--unilus-white);
 }
 
 .report-container {
-    background: var(--white);
+    background: var(--unilus-white);
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -634,8 +681,9 @@ main {
 }
 
 .report-header h2 {
-    color: var(--navy);
+    color: var(--unilus-dark-green);
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .report-summary {
@@ -648,19 +696,20 @@ main {
 .summary-item {
     text-align: center;
     padding: 20px;
-    background: rgba(212, 175, 55, 0.1);
+    background: rgba(255, 215, 0, 0.1);
     border-radius: 12px;
 }
 
 .summary-item h3 {
-    color: var(--navy);
+    color: var(--unilus-dark-green);
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .summary-item p {
     font-size: 24px;
     font-weight: 700;
-    color: var(--gold);
+    color: var(--unilus-gold);
 }
 
 .report-table-container {
@@ -674,11 +723,12 @@ main {
 }
 
 .report-table th {
-    background: var(--navy);
-    color: var(--white);
+    background: var(--unilus-dark-green);
+    color: var(--unilus-white);
     text-align: left;
     padding: 12px 15px;
     font-weight: 600;
+    font-family: inherit;
 }
 
 .report-table td {
@@ -692,35 +742,35 @@ main {
         flex-direction: column;
         gap: 15px;
     }
-    
+
     .main-nav ul {
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
     .attendance-controls,
     .form-row {
         grid-template-columns: 1fr;
     }
-    
+
     .page-header {
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
     }
-    
+
     .timer-controls {
         flex-wrap: wrap;
     }
-    
+
     .scan-input {
         flex-direction: column;
     }
-    
+
     .form-actions {
         flex-direction: column;
     }
-    
+
     .report-controls {
         flex-direction: column;
         align-items: stretch;
@@ -728,8 +778,38 @@ main {
 }
 
 /* Utility Classes */
-.text-center { text-align: center; }
-.text-right { text-align: right; }
-.mt-20 { margin-top: 20px; }
-.mb-20 { margin-bottom: 20px; }
-.hidden { display: none; }
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Logo Styling for Header */
+.university-logo img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* Tagline styling */
+.tagline {
+    font-size: 14px;
+    font-style: italic;
+    color: var(--unilus-dark-green);
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+}

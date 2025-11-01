@@ -24,10 +24,23 @@ const appStorage = isLocalStorageAvailable ? localStorage : safeStorage;
 
 // --- Predefined Invigilator Accounts (JSON format) ---
 const INVIGILATORS = [
-    { username: "john", password: "john123", fullName: "John Banda" },
-    { username: "sarah", password: "sarah123", fullName: "Sarah Mwale" },
-    { username: "michael", password: "mike456", fullName: "Michael Chanda" },
-    { username: "admin", password: "unilus123", fullName: "Admin User" }
+    { username: "BENI", password: "BCS25168878", fullName:"BENI KUPAKWASHE" },
+    { username: "PAUL", password: "BMS25155738", fullName: "BISENGA PAUL" },
+    { username: "CHRISTIAN", password: "BCS25133325", fullName: "CHADAMBUKA CHRISTIAN" },
+    { username: "SIBUSISO", password: "BIT24228709", fullName: "CHIDARERA SIBUSISO" }
+    { username: "ASHELL", password: "BCS25153177", fullName:"CHILUFYA ASHELL" },
+    { username: "AMOS", password: "BCS25131582", fullName: "CHINYAMA AMOS" },
+    { username: "KONDWANI", password: "BIT25152598", fullName: "GONDWE KONDWANI" },
+    { username: "EFTIHIOS", password: "BCS25155885", fullName: "GRIGORAKIS EFTIHIOS" }
+    { username: "THUMA", password: "BCS25165336", fullName:"THUMA HAMUKANGANDU" },
+    { username: "MUTANGO", password: "BCS25174592", fullName: "KACHUNGU MUTANGO" },
+    { username: "FAISAL", password: "BCS25193079", fullName: "KAFUNYA FAISAL" },
+    { username: "LIFUNA", password: "BCS25189578", fullName: "KAPULU LIFUNA" }
+    { username: "KABASO", password: "BCS25191435", fullName:"KASABO KABASO" },
+    { username: "NIZA", password: "BCS25162991", fullName: "KASARO NIZA" },
+    { username: "CHRISTIAN", password: "BCS25133325", fullName: "CHADAMBUKA CHRISTIAN" },
+    { username: "SIBUSISO", password: "BIT24228709", fullName: "CHIDARERA SIBUSISO" }
+
 ];
 
 // --- DOM Elements ---

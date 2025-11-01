@@ -568,7 +568,7 @@ function getCurrentExam() {
 
 function getStudentData() {
     return [
-        { id: '2023001', name: 'John Smith' },
+        { id: 'BCS25168878', name: 'BENI KUPAKWASHE' },
         { id: '2023002', name: 'Sarah Johnson' },
         { id: '2023003', name: 'Michael Brown' },
         { id: '2023004', name: 'Emily Davis' },

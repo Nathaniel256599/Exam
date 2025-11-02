@@ -555,16 +555,16 @@ function getCurrentExam() {
 
 function getStudentData() {
     return [
-        { id: '2023001', name: 'BENI KUPAKWASHE' },
-        { id: '2023002', name: 'Sarah Johnson' },
-        { id: '2023003', name: 'Michael Brown' },
-        { id: '2023004', name: 'Emily Davis' },
-        { id: '2023005', name: 'David Wilson' },
-        { id: '2023006', name: 'Jessica Taylor' },
-        { id: '2023007', name: 'Christopher Anderson' },
-        { id: '2023008', name: 'Amanda Thomas' },
-        { id: '2023009', name: 'Matthew Jackson' },
-        { id: '2023010', name: 'Elizabeth White' }
+        { id: 'BCS25168878', name: 'BENI KUPAKWASHE' },
+        { id: 'BMS25155738', name: 'BISENGA PAUL' },
+        { id: 'BCS25133325', name: 'CHADAMBUKA CHRISTIAN' },
+        { id: 'BIT24228709', name: 'CHIDARERA SIBUSISO' },
+        { id: 'BCS25153177', name: 'CHILUFYA ASHELL' },
+        { id: 'BCS25131582', name: 'CHINYAMA AMOS' },
+        { id: 'BIT25152598', name: 'GONDWE KONDWANNI' },
+        { id: 'BCS25155885', name: 'GRIGORAKIS EFTIHIOS' },
+        { id: 'BCS25165336', name: 'HAMUKANGANDU THUMA' },
+        { id: 'BCS25174592', name: 'KACHUNGU MUTANGO' }
     ];
 }
 
